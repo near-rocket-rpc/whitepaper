@@ -109,7 +109,7 @@ Here are detailed explanation of some core modules:
 
     The Rocket server must authenticate the jwt tokens sent by clients. A jwt will contain the following information: encryption algorithm, NEAR account id, public key that issued the jwt and digital signature.
 
-    ```json
+    ```
     sample jwt token:
     eyJhbGciOiJFRDI1NTE5IiwidHlwIjoiSldUIn0.eyJzdWIiOiJsb2NhbG5ldy50ZXN0bmV0IiwicHVia2V5IjoiZWQyNTUxOTpBZmc1SDdHM01xcUtNVjZ0TmY3cWZUZzI2RVRwa1E3WXpNemEzOUQyWldYcSJ9.tZwbAVVJhn5RwXf_ORFDJH-KanS1AzRyA4YrPHu-TpHvXZrGTAZEVuSEDwKp2SHCj8DzGykt3b683j_p6Fw9DQ
 
