@@ -154,6 +154,11 @@ The dashboard uses websocket to communicate with the Rocket server, so that the 
 
 ![screenshot](dashboard.jpg)
 
+- ### Overall Workflow
+
+The overall workflow of Rocket RPC looks like:
+![workflow](workflow.png)
+
 ## Tokenomics - RPC token
 The last thing I want to discuss is the tokenomic model of RPC token. There are many ways for it to capture value and make both users and protocols benefit.
 
