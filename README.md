@@ -91,13 +91,14 @@ The token here is in line with the official JWT standard, so theoretically any c
 
 - ### Rocket Smart Contracts
 > repo: https://github.com/near-rocket-rpc/rocket-contracts         
+          
 
-    - #### RPC Token Contract
+  - #### RPC Token Contract
       Users who want to enjoy higher-level of RPC services need to pay, and in Rocket RPC this is through the RPC Token. RPC Token is a standard NEP141 token. Every time a user requests the Rocket RPC service (non-free version), a certain amount of RPC Tokens will be deducted.    
       
       The contract is deployed on testnet at: `token.rocket0.testnet`
       
-    - #### Escrow Contract
+  - #### Escrow Contract
       The escrow contract is used to store the token that the user intends to pay for the RPC service. Since the NEP141 standard does not support the approve mechanism like Ethereum, we require users to deposit their RPC tokens to the escrow contract in advance.       
       
       Aftet a use deposits the RPC token, the Rocket server will be able to use the escrow contract to deduct fees according to his service level and usage.
