@@ -160,12 +160,12 @@ In order to allow users to better understand their service usage, we also made a
 
 The dashboard uses websocket to communicate with the Rocket server, so that the user's RPC usage information can be displayed to the user in real time.     
 
-![screenshot](dashboard.jpg)
+![screenshot](https://raw.githubusercontent.com/near-rocket-rpc/whitepaper/main/dashboard.jpg)
 
 - ### Overall Workflow
 
 The overall workflow of Rocket RPC looks like:
-![workflow](workflow.png)
+![workflow](https://raw.githubusercontent.com/near-rocket-rpc/whitepaper/main/workflow.png)
 
 ## Tokenomics - RPC token
 The last thing I want to discuss is the tokenomic model of RPC token. There are many ways for it to capture value and make both users and protocols benefit.
