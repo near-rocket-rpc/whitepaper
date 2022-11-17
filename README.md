@@ -64,6 +64,8 @@ With the Rocket RPC, there is no need to worry any more. Each user will get an e
 Rocket RPC is made up of the following components:
 
 - ### rocket-api-js
+> repo: https://github.com/near-rocket-rpc/rocket-api-js       
+
 In order to generate jwt token when a user logs in, `rocket-api-js` is built upon `near-api-js` and is designed to be compatible with its interface, which minimizes the code change for developers to adapt.       
 
 To login with `rocket-api-js` is very simple: 
@@ -88,6 +90,8 @@ When a logged-in account is detected, `rocket-api-js` will automatically use the
 The token here is in line with the official JWT standard, so theoretically any client or server can verify this token.       
 
 - ### Rocket Smart Contracts
+> repo: https://github.com/near-rocket-rpc/rocket-contracts         
+
     - #### RPC Token Contract
       Users who want to enjoy higher-level of RPC services need to pay, and in Rocket RPC this is through the RPC Token. RPC Token is a standard NEP141 token. Every time a user requests the Rocket RPC service (non-free version), a certain amount of RPC Tokens will be deducted.    
       
@@ -101,6 +105,8 @@ The token here is in line with the official JWT standard, so theoretically any c
       The contract is deployed on testnet at: `escrow.rocket0.testnet`
 
 - ### Rocket RPC Bakcend Service
+> repo: https://github.com/near-rocket-rpc/rocket-rpc-service         
+
 The backend service is the core of Rocket RPC. In general, the Rocket RPC service will be responsible for processing the request sent by the client, extracting the jwt from it and performing authentication. After the authentication is completed, the request will be route to an upstream node according to the service level of the user. In addition, the Rocket RPC service will also deduct the user's RPC token according to the user's usage, and will also monitor the change of user's RPC token balance in order to respond to the service level change in real time.         
 
 Here are detailed explanation of some core modules:     
@@ -147,6 +153,7 @@ Here are detailed explanation of some core modules:
 
 
 - ### Rocket RPC Dashborad
+> repo: https://github.com/near-rocket-rpc/rocket-dashboard         
 
 In order to allow users to better understand their service usage, we also made a dashboard to display the user's RPC token balance, current service level, historical RPC call records and other information.      
 
